@@ -8,12 +8,13 @@ const createChatGPT = async (fields) => {
     const messages = JSON.parse(fields.messages)
     // console.log('Messages: ', messages)
     const response = await openai.createChatCompletion({
-        model: "gpt-3.5-turbo",
+        model: "gpt-4-0314",
         messages: messages,
         // maxTokens: 60,
         // n: 1,
         // stop: '\n',
     });
+    console.log(response)
     return response.data.choices[0].message;
 };
 

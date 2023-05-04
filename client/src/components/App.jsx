@@ -81,8 +81,8 @@ function App() {
 
       return (
         <div className="error-popup">
-          <div className="error-popup-content">
-            <p>This is a private deployment of <em>Computer, Respond!</em>.</p>
+          <div className="err<or-popup-content">
+            <p>This is a<a className='code-block'>gpt-4-0314</a>private deployment of <em>Computer, Respond!</em>.</p>
             <p>App created by <a href="https://github.com/juanjvazquez" style={{color: '#BC00FE', textDecoration: 'none'}} target="_blank" rel="noopener noreferrer">juanjvazquez</a>.</p>
           </div>
           <button className="close-button" onClick={onClose}>
@@ -427,6 +427,9 @@ function App() {
               </div>
             </div>
             )}
+          <div className="footer">
+            by <a style={{color: '#BC00FE', textDecoration: 'none'}} href="https://github.com/juanjvazquez" target="_blank" rel="noopener noreferrer">juanjvazquez</a> -<a className='code-block'>gpt-4-0314</a>powered
+          </div>
         </div>
         <APIKeyPopup isOpen={isKeyPopupOpen} onClose={() => setIsKeyPopupOpen(false)} />
         <ErrorPopup isOpen={isErrorPopupOpen} onClose={() => setIsErrorPopupOpen(false)} errorText={errorText} />
