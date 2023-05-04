@@ -420,7 +420,7 @@ function App() {
                 <input
                   className="apiKeyInput"
                   placeholder="Enter your key..."
-                  value="API not required"
+                  value="Key not required"
                   disabled
                 />
                 </div>
